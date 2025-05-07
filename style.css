@@ -1,0 +1,91 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background: #fff0f6;
+  color: #4a0033;
+}
+
+header {
+  background: linear-gradient(to right, #ff66b3, #cc66ff);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('images/img1.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about, .gallery, .contact, .testimonials {
+  padding: 2rem;
+  background: #ffe6f2;
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #cc66ff88;
+}
+
+.testimonial-slider {
+  text-align: center;
+  font-style: italic;
+}
+
+.testimonial {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 2px solid #ff99cc;
+  border-radius: 10px;
+}
+
+button {
+  background: #ff66b3;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #cc66ff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ffccf2;
+}
